@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+header{
+    background-color: #226089;
+    padding: 20px 0;
+    z-index: 99;
+    position: sticky;
+    color: white;
+}
+.h-80{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: transform 2s ease-in-out;
+    transform-style: preserve-3d;
+}
+/* .img:hover{
+    transform: rotateY( 1440deg);
+} */
+sup{
+    font-size: 15px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 50px 0;
+    background-color: transparent;
+}
+.card{
+    border: none;
+    background-color: #4592af;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 98;
+}
+.head{
+    transform: rotateY(0deg);
+    position: absolute;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+.tail{
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+
+
+.result{
+    margin-top: 50px;
+}
+
+
+.h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btnn{
+    width: 45%;
+    padding: 10px 0;
+    background-color:#e3c4a8;
+    border: none;
+    outline: none;
+    transition: all .25s ease-in-out;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #000000;
+    color: white;
+}
+button:focus{
+    border: none;
+    outline: none;
+}
+#reset{
+    display: none;
+}
+footer{
+    background-color: #226089;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    color: white;
+}
